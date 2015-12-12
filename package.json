@@ -1,0 +1,23 @@
+{
+  "name": "BackboneReact",
+  "version": "0.0.0",
+  "description": "Integrate backbone and react",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "dependencies": {
+    "requirejs": "^2.1.22",
+    "express": "~4.10.1",
+    "express-session": "~1.9.1",
+    "path": "~0.4.9",
+    "mongoose": "~3.5.5",
+    "body-parser": "~1.9.1"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-exec": "*"
+  },
+  "author": "Nihar",
+  "license": "BSD-2-Clause"
+}
