@@ -9,8 +9,13 @@ var application_root = __dirname,
 var app = express();
 
 //Where to serve static content
-app.use( express.static( path.join( application_root, 'app') ) );
+app.use('/', express.static(path.join(__dirname, 'app')));
+//app.use( express.static( path.join( __dirname, 'app') ) );
 app.use(bodyParser());
+
+app.get( '/test1', function( request, response ) {
+    response.send( 'Library API is running' );
+});
 
 //Start server
 var port = 8000;
@@ -18,3 +23,4 @@ var port = 8000;
 app.listen( port, function() {
     console.log( 'Express server listening on port %d in %s mode', port, app.settings.env );
 });
+
